@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        "4xl": "2560px",
+        "3xl": "1920px",
+      },
+    },
 
     fontFamily: {
       neue: "Neue Machina",

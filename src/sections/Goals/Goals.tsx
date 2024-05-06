@@ -6,7 +6,7 @@ export const Goals: FC = () => {
 
   return (
     <section className="py-12">
-      <div className="mx-auto max-w-[1380px] px-2">
+      <div className="px-[5%]">
         <h2 className="mb-6 text-center text-2xl uppercase md:text-4xl">
           <span className="font-dirtyline">O</span>ur go<span className="font-dirtyline">a</span>ls
         </h2>

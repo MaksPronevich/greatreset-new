@@ -1,2 +1,2 @@
 export { useCopyText } from "./useCopyText";
-export { useHoverAnimation } from "./useHoverAnimation";
+export { useScrollHandler } from "./useScrollHandler";

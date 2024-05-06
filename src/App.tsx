@@ -1,17 +1,24 @@
 import { FC } from "react";
+import { Section } from "@/hocs";
+import { useScrollHandler } from "@/hooks";
 import { Home, Intro, About, Goals, Footer, Mission, Roadmap, Tokenomics } from "@/sections";
 
 export const App: FC = () => {
+  const bS = useScrollHandler();
+
+  const renderSections = (): JSX.Element[] => {
+    const sections = [Home, Intro, About, Mission, Tokenomics];
+    return sections.map((SectionComponent, index) => {
+      return <Section WrappedComponent={SectionComponent} index={index} key={index} bS={bS} />;
+    });
+  };
+
   return (
-    <div className="mx-2">
-      <div className="relative h-[100lvh] overflow-y-auto bg-black pb-[10px]">
-        <Home />
-        <Intro />
-        <About />
-        <Mission />
-        <Tokenomics />
-        <Roadmap />
-        <div className="section flex h-full flex-col justify-center bg-black">
+    <div>
+      {renderSections()}
+      <div className="flex items-center">
+        <div className="z-[60] w-full">
+          <Roadmap />
           <Goals />
           <Footer />
         </div>
