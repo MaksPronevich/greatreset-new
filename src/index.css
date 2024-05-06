@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Dirtyline";
+  src:
+    url("/fonts/Dirtyline.woff2") format("woff2"),
+    url("/fonts/Dirtyline.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src:
+    local("Neue Machina Regular"),
+    local("NeueMachina-Regular"),
+    url("/fonts/NeueMachina-Regular.woff2") format("woff2"),
+    url("/fonts/NeueMachina-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src:
+    local("Neue Machina Medium"),
+    local("NeueMachina-Medium"),
+    url("/fonts/NeueMachina-Medium.woff2") format("woff2"),
+    url("/fonts/NeueMachina-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src:
+    local("Neue Machina Bold"),
+    local("NeueMachina-Bold"),
+    url("/fonts/NeueMachina-Bold.woff2") format("woff2"),
+    url("/fonts/NeueMachina-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src:
+    local("Neue Machina Ultrabold"),
+    local("NeueMachina-Ultrabold"),
+    url("/fonts/NeueMachina-Ultrabold.woff2") format("woff2"),
+    url("/fonts/NeueMachina-Ultrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src:
+    local("Neue Machina Black"),
+    local("NeueMachina-Black"),
+    url("/fonts/NeueMachina-Black.woff2") format("woff2"),
+    url("/fonts/NeueMachina-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+.section {
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 0 110px #000;
+}
